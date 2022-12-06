@@ -310,7 +310,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -320,6 +320,58 @@
     [
       "efaa475c-1f9e-4661-914f-5aa44feb523f",
       ""
+    ],
+    [
+      "843c95f7-312c-482e-b9a7-a599f40534f0",
+      "motor2"
+    ],
+    [
+      "97e45704-5ea3-4ebc-a322-727df8f2a89d",
+      "motor1"
+    ],
+    [
+      "1de92529-54c1-433c-854b-4a15e96e347c",
+      "motor3"
+    ],
+    [
+      "af44de84-61ad-47fe-b1bd-38cbc21b0b23",
+      "motor4"
+    ],
+    [
+      "f5468e73-8933-4eef-a6f8-46741185e13d",
+      "motor5"
+    ],
+    [
+      "ff9d744a-30e2-41fe-bf8f-a15a73cddff2",
+      "motor6"
+    ],
+    [
+      "b07fbd69-9daf-4505-aa40-af7d17f186b9",
+      "motor7"
+    ],
+    [
+      "8a2a6497-11be-4cb0-b998-5054739f786e",
+      "motor8"
+    ],
+    [
+      "f1e9f4cf-60d6-4b54-8897-1863b20259c2",
+      "mpu9250"
+    ],
+    [
+      "7e638fe7-b60e-41de-8f89-04252974d842",
+      "power"
+    ],
+    [
+      "5281eeb2-1af7-4ec8-8e4a-63230aa7315c",
+      "interface"
+    ],
+    [
+      "4d4091b9-abe3-4d4e-b801-fd6085d4946f",
+      "lps25hb"
+    ],
+    [
+      "71935c99-d355-4d09-a16c-4403454ba0bf",
+      "controller"
     ]
   ],
   "text_variables": {}
