@@ -353,7 +353,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.09,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -370,38 +370,22 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.09,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "motor",
+        "name": "power",
         "nets": [
           "+BATT",
           "/motor1/+BATT_1",
-          "/motor2/+BATT_2",
-          "Net-(J1-Pad1)",
-          "Net-(J1-Pad2)",
-          "Net-(J19-Pad1)",
-          "Net-(J19-Pad2)",
-          "Net-(J2-Pad1)",
-          "Net-(J2-Pad2)",
-          "Net-(J3-Pad1)",
-          "Net-(J3-Pad2)",
-          "Net-(J4-Pad1)",
-          "Net-(J4-Pad2)",
-          "Net-(J5-Pad1)",
-          "Net-(J5-Pad2)",
-          "Net-(J6-Pad1)",
-          "Net-(J6-Pad2)",
-          "Net-(J7-Pad1)",
-          "Net-(J7-Pad2)"
+          "/motor2/+BATT_2"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3,
+        "track_width": 0.4,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
@@ -417,7 +401,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "OmniDirectional_UAV.dsn",
       "step": "",
       "vrml": ""
     },
@@ -467,8 +451,8 @@
       ""
     ],
     [
-      "0eb33a6b-fbfe-4184-ba46-cc2e1683b289",
-      "motor5"
+      "843c95f7-312c-482e-b9a7-a599f40534f0",
+      "motor2"
     ],
     [
       "97e45704-5ea3-4ebc-a322-727df8f2a89d",
@@ -483,11 +467,15 @@
       "motor4"
     ],
     [
-      "6436e7f1-df87-4915-a36e-6f2147d602f1",
+      "f5468e73-8933-4eef-a6f8-46741185e13d",
+      "motor5"
+    ],
+    [
+      "ff9d744a-30e2-41fe-bf8f-a15a73cddff2",
       "motor6"
     ],
     [
-      "cfe09a4c-ee99-4e51-a788-5b99cca4bd69",
+      "b07fbd69-9daf-4505-aa40-af7d17f186b9",
       "motor7"
     ],
     [
@@ -513,10 +501,6 @@
     [
       "71935c99-d355-4d09-a16c-4403454ba0bf",
       "controller"
-    ],
-    [
-      "03474e6e-131a-48a3-b0ef-509af903e256",
-      "motor2"
     ]
   ],
   "text_variables": {}

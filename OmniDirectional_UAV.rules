@@ -1,0 +1,108 @@
+
+(rules PCB OmniDirectional_UAV
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 51)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um-power" "Via[0-1]_800:400_um" power
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    power "Via[0-1]_800:400_um-power"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    +3.3V GND "Net-(C2-Pad1)" +BATT +5V /controller/NRST "/controller/BUTTON_OUTPUT" "Net-(C14-Pad1)"
+    "Net-(C15-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "/controller/USART1_RX" "/controller/USART1_TX"
+    /controller/SWCLK /controller/SWDIO "Net-(LS1-Pad2)" "Net-(Q1-Pad1)" "/controller/BUZZER_INPUT" "/controller/ADC_BAT" "Net-(R4-Pad1)" /controller/LED1
+    /controller/LED2 /controller/LED3 /controller/LED4 BOOT0 "unconnected-(SW1-Pad3)" "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J2-Pad1)"
+    "Net-(J2-Pad2)" "/controller/MOTOR1_IN2" "/controller/MOTOR1_IN1" "Net-(J3-Pad1)" "Net-(J3-Pad2)" "/controller/MOTOR3_IN2" "/controller/MOTOR3_IN1" "Net-(J4-Pad1)"
+    "Net-(J4-Pad2)" "/controller/MOTOR4_IN2" "/controller/MOTOR4_IN1" "Net-(J5-Pad1)" "Net-(J5-Pad2)" "Net-(J6-Pad1)" "Net-(J6-Pad2)" "Net-(J7-Pad1)"
+    "Net-(J7-Pad2)" "Net-(J8-Pad1)" "/controller/MOTOR8_IN2" "/controller/MOTOR8_IN1" "unconnected-(U9-Pad2)" "/controller/SPI1_MISO" "/controller/SPI1_CS" "/controller/SPI1_SCK"
+    "/controller/SPI1_MOSI" "/controller/SPI3_SCK" "/controller/SPI3_MOSI" "/controller/SPI3_MISO" "/controller/SPI3_CS" "_MOTOR2_IN1" "_MOTOR2_IN2" "_MOTOR7_IN2"
+    "_MOTOR7_IN1" "_MOTOR6_IN2" "_MOTOR6_IN1" "_MOTOR5_IN2" "_MOTOR5_IN1" "/controller/MOTOR5_IN1" "/controller/MOTOR5_IN2" "/controller/MOTOR6_IN1"
+    "/controller/MOTOR6_IN2" "/controller/MOTOR7_IN1" "/controller/MOTOR7_IN2" "/controller/MOTOR2_IN2" "/controller/MOTOR2_IN1" "_MOTOR8_IN1" "_MOTOR8_IN2" "_MOTOR4_IN2"
+    "_MOTOR1_IN1" "_MOTOR1_IN2" "_MOTOR3_IN1" "_MOTOR3_IN2" "_MOTOR4_IN1" "_ADC_BAT" "/controller/+3.3V_" "/controller/GND_"
+    "ADC_BAT_" "unconnected-(J10-Pad1)" "/motor1/+BATT_1" "unconnected-(J12-Pad1)" "/motor2/GND_2" "/motor2/+3.3V_2" "/motor2/+BATT_2" "Net-(J19-Pad1)"
+    "Net-(J19-Pad2)" "unconnected-(U8-Pad2)" "unconnected-(U8-Pad3)" "unconnected-(U8-Pad4)" "unconnected-(U8-Pad5)" "unconnected-(U8-Pad6)" "unconnected-(U8-Pad7)" "unconnected-(U8-Pad12)"
+    "unconnected-(U8-Pad14)" "unconnected-(U8-Pad15)" "unconnected-(U8-Pad16)" "unconnected-(U8-Pad17)" "unconnected-(U8-Pad19)" "unconnected-(U8-Pad21)" "unconnected-(U11-Pad7)" "unconnected-(U12-Pad2)"
+    "unconnected-(U12-Pad3)" "unconnected-(U12-Pad4)" "unconnected-(U12-Pad5)" "unconnected-(U12-Pad6)" "unconnected-(U12-Pad8)" "unconnected-(U12-Pad11)" "unconnected-(U12-Pad24)" "unconnected-(U12-Pad25)"
+    "unconnected-(U12-Pad39)" "unconnected-(U12-Pad41)" "unconnected-(U12-Pad44)" "unconnected-(U12-Pad45)" "unconnected-(U12-Pad53)" "unconnected-(U12-Pad54)" "GND_" "unconnected-(J9-Pad4)"
+    "unconnected-(SW1-Pad1)" "+3.3V_"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class power
+    (clearance_class power)
+    (via_rule power)
+    (rule
+      (width 350.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
