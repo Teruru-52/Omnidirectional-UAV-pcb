@@ -819,9 +819,6 @@
     (path "/7e638fe7-b60e-41de-8f89-04252974d842/7c6a5a73-5bae-4c28-a566-0ebba9218c40"
       (reference "#PWR064") (unit 1) (value "GND") (footprint "")
     )
-    (path "/7e638fe7-b60e-41de-8f89-04252974d842/9adb9096-a8c9-4beb-b8be-004a91b1c629"
-      (reference "#PWR065") (unit 1) (value "+5V") (footprint "")
-    )
     (path "/7e638fe7-b60e-41de-8f89-04252974d842/94fe478b-8f90-4218-b70b-fb806b58eec2"
       (reference "#PWR066") (unit 1) (value "GND") (footprint "")
     )
@@ -929,6 +926,9 @@
     )
     (path "/71935c99-d355-4d09-a16c-4403454ba0bf/1ab787df-3e36-4423-8305-5e23ebb44fb0"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/7e638fe7-b60e-41de-8f89-04252974d842/ed49bbb4-0338-420b-a7fd-3130090a3584"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/f1e9f4cf-60d6-4b54-8897-1863b20259c2/accaf0e4-e93e-4236-b5f3-a055cf0c7106"
       (reference "C1") (unit 1) (value "0.01u") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
@@ -1039,10 +1039,10 @@
       (reference "J9") (unit 1) (value "Conn_01x02") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
     )
     (path "/5281eeb2-1af7-4ec8-8e4a-63230aa7315c/e82c4e44-729c-4587-b310-399a6cf98e10"
-      (reference "J10") (unit 1) (value "UART") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal")
+      (reference "J10") (unit 1) (value "UART") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/5281eeb2-1af7-4ec8-8e4a-63230aa7315c/d7409a1c-b7b9-459b-b5dd-b81d09e635dc"
-      (reference "J11") (unit 1) (value "ST-Link") (footprint "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical")
+      (reference "J11") (unit 1) (value "ST-Link") (footprint "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal")
     )
     (path "/5281eeb2-1af7-4ec8-8e4a-63230aa7315c/73c4f33b-5b58-43b1-bc44-adbccaa82b07"
       (reference "LS1") (unit 1) (value "Speaker") (footprint "omni:STM0440-T-R")
@@ -1089,14 +1089,14 @@
     (path "/71935c99-d355-4d09-a16c-4403454ba0bf/bc08f112-b3cc-4011-99b9-a7c165508b74"
       (reference "R12") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
-    (path "/5281eeb2-1af7-4ec8-8e4a-63230aa7315c/9545579d-68f8-4d67-889d-33a1e43b0281"
-      (reference "SW") (unit 1) (value "SKRPACE") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816")
-    )
-    (path "/5281eeb2-1af7-4ec8-8e4a-63230aa7315c/779460df-afad-4c48-bb60-7d987a448802"
-      (reference "SW") (unit 2) (value "SKRPACE") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816")
-    )
     (path "/7e638fe7-b60e-41de-8f89-04252974d842/52adfa0c-cdee-4b43-ba8d-3f3d4c9de255"
       (reference "SW1") (unit 1) (value "SW_DPDT_x2") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical")
+    )
+    (path "/5281eeb2-1af7-4ec8-8e4a-63230aa7315c/9545579d-68f8-4d67-889d-33a1e43b0281"
+      (reference "SW2") (unit 1) (value "SKRPACE") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816")
+    )
+    (path "/5281eeb2-1af7-4ec8-8e4a-63230aa7315c/db3d8abc-c00a-4a32-b654-cbcdf46fcf46"
+      (reference "SW3") (unit 1) (value "SKRPACE") (footprint "Button_Switch_SMD:SW_Push_1P1T_NO_Vertical_Wuerth_434133025816")
     )
     (path "/843c95f7-312c-482e-b9a7-a599f40534f0/39c9c367-6ce3-4ed4-b867-fd0fdf20a84e"
       (reference "U1") (unit 1) (value "DRV8835") (footprint "omni:DRV8835")
